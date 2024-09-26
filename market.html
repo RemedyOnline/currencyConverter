@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PennyPal Financial Services</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>CashBuddy</h1>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="currency-converter.html">Currency Converter</a></li>
+          <li><a href="stock-market.html">Stock Market</a></li>
+          <li><a href="#">Finance News</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="stock-market">
+      <h2>Real-Time Stock Market</h2>
+      <div>
+        <input
+          type="text"
+          id="stock-symbol"
+          placeholder="Enter stock symbol (e.g., AAPL)"
+        />
+        <button id="fetch-stock">Get Stock Price</button>
+      </div>
+      <div id="stock-info">
+        <!-- Stock data will appear here -->
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2024 CashBuddy. All rights reserved.</p>
+    </footer>
+
+    <script src="./scripts/market.js"></script>
+  </body>
+</html>

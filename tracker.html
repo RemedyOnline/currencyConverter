@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PennyPal Financial Services</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="tracker.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div class="logo-items">
+              <img src="./assets/images/logo.png" width="70px" alt="">
+              <h1><a href="index.html">PennyPal</a></h1>
+          </div>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tracker.html">Budget Tracker</a></li>
+              <li><a href="news.html">Finance News</a></li>
+              <li><a href="trends.html">Currency Trends</a></li>
+              <li><a href="market.html">Stock Market</a></li>
+              <li><a href="converter.html">Currency Converter</a></li>
+              <li><a href="tips.html">Finance Tips</a></li>
+              <li><a href="about.html">About Us</a></li>
+          </ul>
+          <div>
+              <div class="social-links">
+                  <span
+                    ><a href="#" target="_blank"
+                      ><i class="fa fa-instagram fa-2x"></i></a
+                  ></span>
+                  <span
+                    ><a target="_blank" href="#"
+                      ><i class="fa fa-twitter fa-2x"></i></a
+                  ></span>
+                  <span
+                    ><a href="#"><i class="fa fa-facebook fa-2x"></i></a
+                  ></span>
+                  <span
+                    ><a href="#" target="_blank"
+                      ><i class="fa fa-youtube fa-2x"></i></a
+                  ></span>
+                </div>
+          </div>
+        </nav>
+      </header>
+    <section class="budget-tracker">
+      <div class="budget-container">
+        <h1>Budget Tracker</h1>
+
+        <div class="budget-form">
+          <h3>Add Transaction</h3>
+          <input type="text" id="description" placeholder="Description" />
+          <input type="number" id="amount" placeholder="Amount" />
+          <select id="category">
+            <option value="income">Income</option>
+            <option value="groceries">Groceries</option>
+            <option value="transport">Transport</option>
+            <option value="entertainment">Entertainment</option>
+            <option value="bills">Bills</option>
+            <option value="other">Other</option>
+          </select>
+          <button id="addTransaction">Add Transaction</button>
+        </div>
+
+        <div class="budget-summary">
+          <h3>Budget Summary</h3>
+          <p>Total Income: <span id="totalIncome">$0</span></p>
+          <p>Total Expenses: <span id="totalExpenses">$0</span></p>
+          <p>Remaining Balance: <span id="remainingBalance">$0</span></p>
+        </div>
+
+        <div class="transaction-list">
+          <h3>Transactions</h3>
+          <ul id="transactionList"></ul>
+        </div>
+      </div>
+      <div class="live-exchange">
+        <h1>Live Exchange Rates</h1>
+        <div id="exchange-rates">
+          <p>Fetching exchange rates...</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© 2024 CashBuddy. All rights reserved.</p>
+    </footer>
+    <script src="./scripts/tracker.js"></script>
+  </body>
+</html>

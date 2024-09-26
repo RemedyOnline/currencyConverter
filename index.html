@@ -1,36 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currency Converter</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PennyPal Financial Services</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="converter">
-        <h2>Currency Converter</h2>
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" placeholder="Enter amount">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-items">
+            <img src="./assets/images/logo.png" width="70px" alt="">
+            <h1><a href="index.html">PennyPal</a></h1>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tracker.html">Budget Tracker</a></li>
+            <li><a href="news.html">Finance News</a></li>
+            <li><a href="trends.html">Currency Trends</a></li>
+            <li><a href="market.html">Stock Market</a></li>
+            <li><a href="converter.html">Currency Converter</a></li>
+            <li><a href="tips.html">Finance Tips</a></li>
+            <li><a href="about.html">About Us</a></li>
+        </ul>
+        <div>
+            <div class="social-links">
+                <span
+                  ><a href="#" target="_blank"
+                    ><i class="fa fa-instagram fa-2x"></i></a
+                ></span>
+                <span
+                  ><a target="_blank" href="#"
+                    ><i class="fa fa-twitter fa-2x"></i></a
+                ></span>
+                <span
+                  ><a href="#"><i class="fa fa-facebook fa-2x"></i></a
+                ></span>
+                <span
+                  ><a href="#" target="_blank"
+                    ><i class="fa fa-youtube fa-2x"></i></a
+                ></span>
+              </div>
+        </div>
+      </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Welcome to the Ultimate Currency Converter</h1>
+            <p>Get real-time exchange rates, trends, and the latest financial news all in one place.</p>
+            <a href="#converter" class="cta-btn">Try Converter</a>
+        </div>
+    </section>
 
-        <label for="fromCurrency">From:</label>
-        <select id="fromCurrency">
-            <option value="USD">USD</option>
-            <option value="EUR">EUR</option>
-            <!-- Add more options as needed -->
-        </select>
+    <section id="features">
+        <h2>Our Features</h2>
+        <div class="feature-box">
+            <div class="feature-item">
+                <h3>Currency Converter</h3>
+                <p>Convert over 100+ currencies with real-time rates.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Currency Trends</h3>
+                <p>Track historical exchange rates and trends.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Cryptocurrency Exchange</h3>
+                <p>Get the latest crypto prices and convert between fiat and cryptocurrencies.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Financial News</h3>
+                <p>Stay updated with the latest news in the world of finance.</p>
+            </div>
+        </div>
+    </section>
 
-        <label for="toCurrency">To:</label>
-        <select id="toCurrency">
-            <option value="EUR">EUR</option>
-            <option value="USD">USD</option>
-            <!-- Add more options as needed -->
-        </select>
-
-        <button id="convertBtn">Convert</button>
-
-        <h3 id="result"></h3>
-    </div>
-
-    <script src="app.js"></script>
-</body>
+    <footer>
+        <p>&copy; 2024 Currency Converter App | All rights reserved.</p>
+    </footer>
+    <script src="scripts/converter.js"></script>
+  </body>
 </html>
