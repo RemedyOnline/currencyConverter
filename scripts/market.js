@@ -11,8 +11,8 @@ document.getElementById('fetch-stock').addEventListener('click', function() {
                 <h3>Stock Symbol: ${symbol}</h3>
                 <p>Current Price: $${data.c}</p>
                 <p>Open Price: $${data.o}</p>
-                <p>High Price: $${data.h}</p>
-                <p>Low Price: $${data.l}</p>
+                <p>High Price: $<span class="high-price">${data.h}</span></p>
+                <p>Low Price: $<span class="low-price">${data.l}</span></p>
                 <p>Previous Close: $${data.pc}</p>
               `;
           } else {

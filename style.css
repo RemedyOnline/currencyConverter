@@ -246,6 +246,17 @@ nav:hover {
   font-size: 4rem;
 }
 
+.high-price {
+  color: green;
+  font-weight: bold;
+}
+
+.low-price {
+  color: red;
+  font-weight: bold;
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero {

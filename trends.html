@@ -1,127 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PennyPal Financial Services</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-  <title>PennyPal Financial Services</title>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <link
-    rel="stylesheet"
-    href="style.css"
-  >
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div>
-        <a
-          href="index.html"
-          class="logo-items"
-        >
-          <img
-            src="./assets/images/logo.png"
-            alt="logo"
-          >
-          <span>PennyPal</span>
-        </a>
-      </div>
-      <ul class="nav-group">
-        <li><a
-            href="index.html"
-            class="nav-item"
-          ><i
-              class="fa fa-home"
-              style="font-size:32px"
-            ></i><span>Home</span></a></li>
-        <li><a
-            href="tracker.html"
-            class="nav-item"
-          ><i
-              class="fa fa-calculator"
-              style="font-size:30px"
-            ></i><span>Budget Tracker</span></a></li>
-        <li><a
-            href="news.html"
-            class="nav-item"
-          ><i
-              class="fa fa-newspaper-o"
-              style="font-size:27px"
-            ></i><span>Finance News</span></a></li>
-        <li><a
-            href="trends.html"
-            class="nav-item"
-          ><i
-              class="fa fa-area-chart"
-              style="font-size:27px"
-            ></i><span>Currency Trends</span></a></li>
-        <li><a
-            href="market.html"
-            class="nav-item"
-          ><i
-              class="fa fa-bar-chart"
-              style="font-size:27px"
-            ></i><span>Stock Market</span></a></li>
-        <li><a
-            href="converter.html"
-            class="nav-item"
-          ><i
-              class="fa fa-exchange"
-              style="font-size:30px"
-            ></i><span>Currency Converter</span></a></li>
-        <li><a
-            href="tips.html"
-            class="nav-item"
-          ><i
-              class="fa fa-lightbulb-o"
-              style="font-size:32px; width: 62px;"
-            ></i><span>Finance Tips</span></a></li>
-        <li><a
-            href="about.html"
-            class="nav-item active"
-          ><i
-              class="fa fa-info-circle"
-              style="font-size:32px; width: 63px;"
-            ></i><span>About Us</span></a></li>
-      </ul>
-      <div>
-        <div class="social-links">
-          <span><a
-              href="#"
-              target="_blank"
-            ><i class="fa fa-instagram fa-2x"></i></a></span>
-          <span><a
-              target="_blank"
-              href="#"
-            ><i class="fa fa-twitter fa-2x"></i></a></span>
-          <span><a href="#"><i class="fa fa-facebook fa-2x"></i></a></span>
-          <span><a
-              href="#"
-              target="_blank"
-            ><i class="fa fa-youtube fa-2x"></i></a></span>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <a href="index.html" class="logo-items">
+            <img src="./assets/images/logo.png" alt="logo" />
+            <span>PennyPal</span>
+          </a>
         </div>
-      </div>
-    </nav>
-  </header>
+        <ul class="nav-group">
+          <li>
+            <a href="index.html" class="nav-item"
+              ><i class="fa fa-home" style="font-size: 32px"></i
+              ><span>Home</span></a
+            >
+          </li>
+          <li>
+            <a href="tracker.html" class="nav-item"
+              ><i class="fa fa-calculator" style="font-size: 30px"></i
+              ><span>Budget Tracker</span></a
+            >
+          </li>
+          <li>
+            <a href="news.html" class="nav-item"
+              ><i class="fa fa-newspaper-o" style="font-size: 27px"></i
+              ><span>Finance News</span></a
+            >
+          </li>
+          <li>
+            <a href="trends.html" class="nav-item"
+              ><i class="fa fa-area-chart" style="font-size: 27px"></i
+              ><span>Currency Trends</span></a
+            >
+          </li>
+          <li>
+            <a href="market.html" class="nav-item"
+              ><i class="fa fa-bar-chart" style="font-size: 27px"></i
+              ><span>Stock Market</span></a
+            >
+          </li>
+          <li>
+            <a href="converter.html" class="nav-item"
+              ><i class="fa fa-exchange" style="font-size: 30px"></i
+              ><span>Currency Converter</span></a
+            >
+          </li>
+          <li>
+            <a href="tips.html" class="nav-item"
+              ><i
+                class="fa fa-lightbulb-o"
+                style="font-size: 32px; width: 62px"
+              ></i
+              ><span>Finance Tips</span></a
+            >
+          </li>
+          <li>
+            <a href="about.html" class="nav-item active"
+              ><i
+                class="fa fa-info-circle"
+                style="font-size: 32px; width: 63px"
+              ></i
+              ><span>About Us</span></a
+            >
+          </li>
+        </ul>
+        <div>
+          <div class="social-links">
+            <span
+              ><a href="#" target="_blank"
+                ><i class="fa fa-instagram fa-2x"></i></a
+            ></span>
+            <span
+              ><a target="_blank" href="#"
+                ><i class="fa fa-twitter fa-2x"></i></a
+            ></span>
+            <span
+              ><a href="#"><i class="fa fa-facebook fa-2x"></i></a
+            ></span>
+            <span
+              ><a href="#" target="_blank"
+                ><i class="fa fa-youtube fa-2x"></i></a
+            ></span>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-  <section class="currency-trends">
-    <h2 class="page-header">Currency Trends - USD to EUR</h2>
-    <canvas id="currencyChart"></canvas>
-  </section>
+    <section class="currency-trends">
+      <h2 class="page-header">Currency Trends - USD to EUR</h2>
+      <canvas id="currencyChart"></canvas>
+    </section>
 
-  <footer>
-    <p>© 2024 CashBuddy. All rights reserved.</p>
-  </footer>
-
-  <script src="./scripts/trends.js"></script>
-</body>
-
+    <footer>
+      <p>&copy; 2024 PennyPal | All rights reserved.</p>
+    </footer>
+    <script src="./scripts/trends.js"></script>
+  </body>
 </html>
