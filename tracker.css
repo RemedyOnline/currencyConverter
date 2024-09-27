@@ -25,11 +25,12 @@ nav {
   overflow: hidden;
   transition: width 0.2s linear;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  position: fixed;
 }
 
 nav:hover {
   width: 270px;
-  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
   transition: all 0.5s ease;
 }
 
@@ -230,11 +231,17 @@ button:hover {
 }
 
 footer {
-  background: #333;
-  color: #fff;
   text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
+  padding: 5px;
+  background-color: #999;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
 }
 
 #exchange-rates {
@@ -242,4 +249,23 @@ footer {
   padding: 10px;
   border: 1px solid #ddd;
   background-color: #f9f9f9;
+}
+
+@font-face {
+  font-family: Phillows;
+  src: url(./assets/fonts/Phillows.ttf);
+}
+
+@font-face {
+  font-family: Starlight;
+  src: url(./assets/fonts/StarlightRune-Personal\ Use.ttf);
+}
+@font-face {
+  font-family: CloudOnline;
+  src: url(./assets/fonts/CloudOnline.ttf);
+}
+
+.page-header {
+  font-family: "Starlight";
+  font-size: 3rem;
 }
