@@ -1,143 +1,245 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-  }
-
-  
-  header {
-    background: #333;
-    color: #fff;
-    padding: 10px 0;
-    /* position: fixed; */
-    width: 100%;
-  }
-  
-  .logo-items {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-  }
-  
-  .logo-items a {
-      color: white;
-  }
-  nav {
-    align-items: center;
-    display: flex;
-    justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style-type: none;
+  text-decoration: none;
 }
 
-nav ul {
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  background: #999;
+  width: 83px;
+  overflow: hidden;
+  transition: width 0.2s linear;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+nav:hover {
+  width: 270px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.5);
+  transition: all 0.5s ease;
+}
+
+.logo-items {
   display: flex;
-  justify-content: center;
-  list-style: none;
   align-items: center;
-  line-height: 25px;
+  text-align: center;
+  transition: all 0.5s ease;
+  padding: 10px 0 10px 17px;
+}
+
+.logo-items:hover {
+  background-color: #007bff;
+}
+
+.logo-items img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-items span {
+  font-weight: bold;
+  font-size: 40px;
+  color: #333;
+  padding-left: 15px;
+  font-family: "CloudOnline";
+}
+
+.nav-group a {
+  position: relative;
+  color: #333;
+  font-size: 16px;
+  display: table;
+  width: 300px;
+  padding: 10px;
+}
+
+.nav-group a span {
+  position: relative;
+  top: 1px;
+  font-size: 20px;
+}
+
+.nav-group a:hover {
+  background: #666;
+}
+
+.nav-group .fa {
+  position: relative;
+  padding: 0 16px 0 16px;
+  margin-right: 10px;
+  top: 5px;
+  /* font-size: 50px; */
   text-align: center;
 }
 
-nav ul li {
-  margin: 0 15px;
-  width: 60px;
+.nav-item {
+  position: relative;
 }
 
-nav ul li a {
-  color: #fff;
+.social-links {
+  position: relative;
+  bottom: 0;
+  margin: 20px 0 0 12px;
+}
+
+.social-links:hover {
+  position: relative;
+  /* width: 240px; */
+  margin: 20px 0 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+}
+
+.social-links a {
+  color: #333;
+  opacity: 0.5;
+}
+
+.social-links a:hover {
+  opacity: 1;
+}
+
+/* Set a specific color for each brand */
+
+/* instagram */
+.fa-instagram:hover {
+  padding: 4px;
+  width: fit-content;
   text-decoration: none;
-  font-size: 18px;
-  width: 10%;
+  text-align: center;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
 }
 
-nav ul li a:hover {
-  color: #f4c430;
+.fa-twitter:hover {
+  padding: 4px;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  background: #55acee;
+  color: white;
 }
 
-  .budget-tracker {
-    text-align: center;
-    padding: 50px;
-    display: flex;
-  }
-  
-  .budget-container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .budget-form,
-  .budget-summary,
-  .transaction-list {
-    margin-bottom: 20px;
-    padding: 10px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  input,
-  select,
-  button {
-    padding: 10px;
-    margin: 10px 0;
-    width: 100%;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button {
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
-  .budget-summary p {
-    font-size: 1.2em;
-  }
-  
-  #transactionList {
-    list-style-type: none;
-  }
-  
-  #transactionList li {
-    padding: 10px;
-    background: #eee;
-    margin: 10px 0;
-    border-left: 6px solid green;
-    border-radius: 4px;
-  }
-  
-  #transactionList li.expense {
-    border-color: red;
-  }
-  
-  footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-  }
+.fa-facebook:hover {
+  padding: 4px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  background: #1877f2;
+  color: white;
+}
 
-  #exchange-rates {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    background-color: #f9f9f9;
+.fa-youtube:hover {
+  padding: 4px;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  background: #bb0000;
+  color: white;
+}
+
+.budget-tracker {
+  text-align: center;
+  padding: 50px;
+  display: flex;
+}
+
+.budget-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.budget-form,
+.budget-summary,
+.transaction-list {
+  margin-bottom: 20px;
+  padding: 10px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input,
+select,
+button {
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.budget-summary p {
+  font-size: 1.2em;
+}
+
+#transactionList {
+  list-style-type: none;
+}
+
+#transactionList li {
+  padding: 10px;
+  background: #eee;
+  margin: 10px 0;
+  border-left: 6px solid green;
+  border-radius: 4px;
+}
+
+#transactionList li.expense {
+  border-color: red;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+#exchange-rates {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
 }

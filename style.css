@@ -27,67 +27,12 @@ body {
   font-family: CloudOnline;
   src: url(./assets/fonts/CloudOnline.ttf);
 }
+
+.page-header {
+  font-family: "Starlight";
+  font-size: 4rem;
+}
 /* ------------------ */
-/*
-header {
-  background: #333;
-  color: #fff;
-  padding: 10px 0;
-  width: 100%;
-}
-
-.logo-items {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-items a {
-  color: white;
-}
-
-.social-links a {
-  color: white;
-  margin-right: 10px;
-  opacity: 0.5;
-}
-
-.social-links a:hover {
-  opacity: 1;
-}
-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  align-items: center;
-  line-height: 25px;
-  text-align: center;
-}
-
-nav ul li {
-  margin: 0 15px;
-  width: 60px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  width: 10%;
-}
-
-nav ul li a:hover {
-  color: #f4c430;
-}
-
-*/
-
 /* -------------- */
 
 nav {
@@ -101,6 +46,7 @@ nav {
   overflow: hidden;
   transition: width 0.2s linear;
   box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+  position: fixed;
 }
 
 nav:hover {
@@ -114,7 +60,7 @@ nav:hover {
   align-items: center;
   text-align: center;
   transition: all 0.5s ease;
-  padding: 10px 0 10px 17px;
+  padding: 10px 0 0 6px;
 }
 
 .logo-items:hover {
@@ -122,8 +68,8 @@ nav:hover {
 }
 
 .logo-items img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 .logo-items span {
@@ -166,16 +112,20 @@ nav:hover {
   position: relative;
 }
 
+.nav-item:hover {
+  text-decoration: underline;
+}
+
 .social-links {
   position: relative;
   bottom: 0;
-  margin: 20px 0 0 12px;
+  margin: 30px 0 0 12px;
 }
 
 .social-links:hover {
   position: relative;
   /* width: 240px; */
-  margin: 20px 0 0 20px;
+  margin: 30px 0 0 20px;
   display: flex;
   align-items: center;
   justify-content: left;
@@ -240,38 +190,41 @@ nav:hover {
 /* ------------------- */
 /* Hero Section */
 .hero {
-  background-image: url(./assets/images/coins.jpg);
+  background-image: url(./assets/images/dollars.jpg);
+  background: rgba(0, 0, 0, 0.2);
   background-size: cover;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
   align-items: center;
   padding: 78px;
-  background-color: #fff;
-  /* height: 100vh; */
+  /* background-color: #fff; */
+  height: 100vh;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .hero-content {
   max-width: 500px;
+  margin-left: 100px;
 }
 
 .hero-content h1 {
   font-size: 3em;
-  margin-bottom: 20px;
-  color: #0077cc;
+  margin-bottom: 28px;
+  color: #333;
 }
 
 .hero-content p {
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   line-height: 1.6;
 }
 
 .cta-button {
   display: inline-block;
-  background-color: #0077cc;
+  background-color: #333;
   color: #fff;
-  padding: 15px 30px;
+  padding: 8px 24px;
   font-size: 1.2em;
   text-decoration: none;
   border-radius: 5px;
@@ -283,8 +236,13 @@ nav:hover {
 }
 
 .hero-image img {
-  max-width: 500px;
+  max-width: 550px;
   height: auto;
+}
+
+.theme-font {
+  font-family: "CloudOnline";
+  font-size: 4rem;
 }
 
 /* Responsive Design */
@@ -303,6 +261,7 @@ nav:hover {
     font-size: 2.5em;
   }
 }
+
 /* ------------------------------ */
 
 /* 
@@ -377,14 +336,6 @@ nav:hover {
 .feature-item h3 {
   font-size: 24px;
   margin-bottom: 15px;
-}
-
-footer {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
-  margin-top: 20px;
 }
 
 .contentt {
@@ -562,4 +513,76 @@ canvas {
 
 #transactionList li.expense {
   border-color: red;
+}
+
+.aboutt {
+  padding: 40px;
+  background-color: #fff;
+}
+
+.about-us {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #0077cc;
+}
+
+.about-us p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-us h2 {
+  font-size: 2em;
+  margin-top: 30px;
+  color: #005fa3;
+}
+
+.about-us ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.about-us ul li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #0077cc;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #005fa3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #999;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
 }

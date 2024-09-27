@@ -1,50 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PennyPal Financial Services</title>
-    <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>PennyPal Financial Services</title>
+  <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <h1>CashBuddy</h1>
-        </div>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="currency-converter.html">Currency Converter</a></li>
-          <li><a href="stock-market.html">Stock Market</a></li>
-          <li><a href="#">Finance News</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
 
-    <section class="stock-market">
-      <h2>Real-Time Stock Market</h2>
+<body>
+  <header>
+    <nav>
       <div>
-        <input
-          type="text"
-          id="stock-symbol"
-          placeholder="Enter stock symbol (e.g., AAPL)"
-        />
-        <button id="fetch-stock">Get Stock Price</button>
+        <a
+          href="index.html"
+          class="logo-items"
+        >
+          <img
+            src="./assets/images/logo.png"
+            alt="logo"
+          >
+          <span>PennyPal</span>
+        </a>
       </div>
-      <div id="stock-info">
-        <!-- Stock data will appear here -->
+      <ul class="nav-group">
+        <li><a
+            href="index.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Home</span></a></li>
+        <li><a
+            href="tracker.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Budget Tracker</span></a></li>
+        <li><a
+            href="news.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Finance News</span></a></li>
+        <li><a
+            href="trends.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Currency Trends</span></a></li>
+        <li><a
+            href="market.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Stock Market</span></a></li>
+        <li><a
+            href="converter.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Currency Converter</span></a></li>
+        <li><a
+            href="tips.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Finance Tips</span></a></li>
+        <li><a
+            href="about.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>About Us</span></a></li>
+      </ul>
+      <div>
+        <div class="social-links">
+          <span><a
+              href="#"
+              target="_blank"
+            ><i class="fa fa-instagram fa-2x"></i></a></span>
+          <span><a
+              target="_blank"
+              href="#"
+            ><i class="fa fa-twitter fa-2x"></i></a></span>
+          <span><a href="#"><i class="fa fa-facebook fa-2x"></i></a></span>
+          <span><a
+              href="#"
+              target="_blank"
+            ><i class="fa fa-youtube fa-2x"></i></a></span>
+        </div>
       </div>
-    </section>
+    </nav>
+  </header>
 
-    <footer>
-      <p>© 2024 CashBuddy. All rights reserved.</p>
-    </footer>
+  <section class="stock-market">
+    <h2 class="page-header">Real-Time Stock Market</h2>
+    <div>
+      <input
+        type="text"
+        id="stock-symbol"
+        placeholder="Enter stock symbol (e.g., AAPL)"
+      />
+      <button id="fetch-stock">Get Stock Price</button>
+    </div>
+    <div id="stock-info">
+      <!-- Stock data will appear here -->
+    </div>
+  </section>
 
-    <script src="./scripts/market.js"></script>
-  </body>
+  <footer>
+    <p>© 2024 CashBuddy. All rights reserved.</p>
+  </footer>
+
+  <script src="./scripts/market.js"></script>
+</body>
+
 </html>
