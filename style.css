@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: none;
-  outline: none;
+  /* border: none;
+  outline: none; */
   list-style-type: none;
   text-decoration: none;
 }
@@ -74,11 +74,12 @@ nav:hover {
 
 .logo-items span {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 50px;
   color: #333;
   padding-left: 15px;
   font-family: "CloudOnline";
 }
+
 
 .nav-group a {
   position: relative;
@@ -192,7 +193,7 @@ nav:hover {
 /* Hero Section */
 .hero {
   background-image: url(./assets/images/dollars.jpg);
-  background: rgba(0, 0, 0, 0.2);
+  background: white;
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -244,6 +245,12 @@ nav:hover {
 .theme-font {
   font-family: "CloudOnline";
   font-size: 4rem;
+}
+
+.market-page {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
 
 .high-price {
@@ -402,6 +409,13 @@ button:hover {
   padding: 50px;
 }
 
+.stock-description{
+  padding: 30px;
+  background-color: #9999994d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 #stock-symbol {
   padding: 10px;
   font-size: 1rem;
@@ -471,8 +485,9 @@ button:hover {
 }
 
 canvas {
-  max-width: 100%;
-  height: auto;
+  max-width: 90%;
+  margin-left: 70px;
+  height: 50vh;
 }
 
 .financial-tips {
@@ -484,12 +499,21 @@ canvas {
 #dynamic-articles ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
 }
+
 
 #static-tips li,
 #finance-articles li {
   margin-bottom: 10px;
   font-size: 1.2em;
+  padding: 5px;
+  width: 300px;
+  border: 0.5px solid #555;
 }
 
 #finance-articles a {
