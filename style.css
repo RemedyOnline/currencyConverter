@@ -55,16 +55,17 @@ nav:hover {
   transition: all 0.5s ease;
 }
 
+.active {
+  background: #666;
+  color: white;
+}
+
 .logo-items {
   display: flex;
   align-items: center;
   text-align: center;
   transition: all 0.5s ease;
   padding: 10px 0 0 6px;
-}
-
-.logo-items:hover {
-  background-color: #007bff;
 }
 
 .logo-items img {
@@ -485,9 +486,9 @@ button:hover {
 }
 
 canvas {
-  max-width: 90%;
+  max-width: 100%;
   margin-left: 70px;
-  height: 50vh;
+  height: 100px;
 }
 
 .financial-tips {

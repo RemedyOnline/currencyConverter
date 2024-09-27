@@ -39,7 +39,7 @@ nav:hover {
   align-items: center;
   text-align: center;
   transition: all 0.5s ease;
-  padding: 10px 0 10px 17px;
+  padding: 10px 0 10px 6px;
 }
 
 .logo-items:hover {
@@ -47,13 +47,13 @@ nav:hover {
 }
 
 .logo-items img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
 }
 
 .logo-items span {
   font-weight: bold;
-  font-size: 40px;
+  font-size: 50px;
   color: #333;
   padding-left: 15px;
   font-family: "CloudOnline";
@@ -78,6 +78,11 @@ nav:hover {
   background: #666;
 }
 
+.active {
+  background: #666;
+  color: white;
+}
+
 .nav-group .fa {
   position: relative;
   padding: 0 16px 0 16px;
@@ -89,7 +94,10 @@ nav:hover {
 
 .nav-item {
   position: relative;
+  font-weight: bold;
+
 }
+
 
 .social-links {
   position: relative;
@@ -166,17 +174,21 @@ nav:hover {
   text-align: center;
   padding: 50px;
   display: flex;
+  width: 1000px;
+  justify-content: center;
+  margin-left: 150px;
 }
 
 .budget-container {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 20px;
+  /* margin-left: 200px; */
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .budget-form,
