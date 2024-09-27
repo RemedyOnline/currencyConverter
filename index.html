@@ -1,85 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PennyPal Financial Services</title>
-    <link
+
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>PennyPal Financial Services</title>
+  <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo-items">
-            <img src="./assets/images/logo.png" width="70px" alt="">
-            <h1><a href="index.html">PennyPal</a></h1>
-        </div>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tracker.html">Budget Tracker</a></li>
-            <li><a href="news.html">Finance News</a></li>
-            <li><a href="trends.html">Currency Trends</a></li>
-            <li><a href="market.html">Stock Market</a></li>
-            <li><a href="converter.html">Currency Converter</a></li>
-            <li><a href="tips.html">Finance Tips</a></li>
-            <li><a href="about.html">About Us</a></li>
-        </ul>
-        <div>
-            <div class="social-links">
-                <span
-                  ><a href="#" target="_blank"
-                    ><i class="fa fa-instagram fa-2x"></i></a
-                ></span>
-                <span
-                  ><a target="_blank" href="#"
-                    ><i class="fa fa-twitter fa-2x"></i></a
-                ></span>
-                <span
-                  ><a href="#"><i class="fa fa-facebook fa-2x"></i></a
-                ></span>
-                <span
-                  ><a href="#" target="_blank"
-                    ><i class="fa fa-youtube fa-2x"></i></a
-                ></span>
-              </div>
-        </div>
-      </nav>
-    </header>
-    <section id="hero">
-        <div class="hero-text">
-            <h1>Welcome to the Ultimate Currency Converter</h1>
-            <p>Get real-time exchange rates, trends, and the latest financial news all in one place.</p>
-            <a href="#converter" class="cta-btn">Try Converter</a>
-        </div>
-    </section>
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+</head>
 
-    <section id="features">
-        <h2>Our Features</h2>
-        <div class="feature-box">
-            <div class="feature-item">
-                <h3>Currency Converter</h3>
-                <p>Convert over 100+ currencies with real-time rates.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Currency Trends</h3>
-                <p>Track historical exchange rates and trends.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Cryptocurrency Exchange</h3>
-                <p>Get the latest crypto prices and convert between fiat and cryptocurrencies.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Financial News</h3>
-                <p>Stay updated with the latest news in the world of finance.</p>
-            </div>
+<body>
+  <header>
+    <nav>
+      <div>
+        <a
+          href="index.html"
+          class="logo-items"
+        >
+          <img
+            src="./assets/images/logo.png"
+            alt="logo"
+          >
+          <span>PennyPal</span>
+        </a>
+      </div>
+      <ul class="nav-group">
+        <li><a
+            href="index.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Home</span></a></li>
+        <li><a
+            href="tracker.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Budget Tracker</span></a></li>
+        <li><a
+            href="news.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Finance News</span></a></li>
+        <li><a
+            href="trends.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Currency Trends</span></a></li>
+        <li><a
+            href="market.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Stock Market</span></a></li>
+        <li><a
+            href="converter.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Currency Converter</span></a></li>
+        <li><a
+            href="tips.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>Finance Tips</span></a></li>
+        <li><a
+            href="about.html"
+            class="nav-item"
+          >
+            <i class="fa fa-home fa-2x"></i><span>About Us</span></a></li>
+      </ul>
+      <div>
+        <div class="social-links">
+          <span><a
+              href="#"
+              target="_blank"
+            ><i class="fa fa-instagram fa-2x"></i></a></span>
+          <span><a
+              target="_blank"
+              href="#"
+            ><i class="fa fa-twitter fa-2x"></i></a></span>
+          <span><a href="#"><i class="fa fa-facebook fa-2x"></i></a></span>
+          <span><a
+              href="#"
+              target="_blank"
+            ><i class="fa fa-youtube fa-2x"></i></a></span>
         </div>
-    </section>
+      </div>
+    </nav>
+  </header>
 
-    <footer>
-        <p>&copy; 2024 Currency Converter App | All rights reserved.</p>
-    </footer>
-    <script src="scripts/converter.js"></script>
-  </body>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to PennyPal</h1>
+      <p>Your trusted partner in managing finances, converting currencies, and tracking market trends in real-time.</p>
+      <p>Whether you're budgeting, investing, or simply staying updated, PennyPal brings all your financial needs
+        together
+        in one place.</p>
+      <a
+        href="#get-started"
+        class="cta-button"
+      >Get Started</a>
+    </div>
+    <div class="hero-image">
+      <img
+        src="./assets/images/Hero.PNG"
+        alt="Finance and Currency Illustration"
+      >
+    </div>
+  </section>
+  <!-- <section id="hero">
+    <div class="hero-text">
+      <h1>Welcome to the Ultimate Currency Converter</h1>
+      <p>Get real-time exchange rates, trends, and the latest financial news all in one place.</p>
+      <a
+        href="#converter"
+        class="cta-btn"
+      >Try Converter</a>
+    </div>
+  </section> -->
+  <footer>
+    <p>&copy; 2024 Currency Converter App | All rights reserved.</p>
+  </footer>
+  <script src="scripts/converter.js"></script>
+</body>
+
 </html>
